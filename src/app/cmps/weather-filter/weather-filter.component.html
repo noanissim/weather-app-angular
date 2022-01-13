@@ -1,0 +1,11 @@
+<form class="weather-filter">
+  <!-- <input [(ngModel)]="filterBy.term" (ngModelChange)="onSetFilter()" name="term" type="text"
+    placeholder="Search a weather"> -->
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Filter by</mat-label>
+    <input matInput placeholder="Search a place" [(ngModel)]="filterBy.term" name="term">
+  </mat-form-field>
+  <button (click)="onSetFilter()">search</button>
+
+
+</form>

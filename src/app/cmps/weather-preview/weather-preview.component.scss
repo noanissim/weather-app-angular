@@ -1,0 +1,40 @@
+.weather-preview {
+  background-color: rgb(187, 187, 187);
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: fit-content;
+  width: 200px;
+
+  .info {
+    display: inline-block;
+    width: 100%;
+    > * {
+      max-width: 100%;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+      border-radius: 50px;
+    }
+    p {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+}

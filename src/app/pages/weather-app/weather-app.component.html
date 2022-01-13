@@ -1,0 +1,5 @@
+<section class="weather-app container">
+  <weather-filter></weather-filter>
+  <weather-list [weathers]="weathers$|async"></weather-list>
+  <router-outlet></router-outlet>
+</section>
